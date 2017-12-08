@@ -1,25 +1,63 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Heavy</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="talentifyLogoXXXHDPI" translatesAutoresizingMaskIntoConstraints="NO" id="QUM-Kr-AWU">
+                                <rect key="frame" x="130" y="272" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Yhe-3w-s27"/>
+                                    <constraint firstAttribute="width" constant="60" id="lf4-Nb-xgh"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TALENTIFY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zeq-8j-PJX">
+                                <rect key="frame" x="113.5" y="502" width="93.5" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="qkR-0c-nfa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91456800699234009" green="0.25395464897155762" blue="0.30776578187942505" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Zeq-8j-PJX" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="W0d-0u-CVJ"/>
+                            <constraint firstItem="Zeq-8j-PJX" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="cg6-Fv-uPJ"/>
+                            <constraint firstItem="QUM-Kr-AWU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="252" id="cnO-CN-Z6w"/>
+                            <constraint firstItem="Zeq-8j-PJX" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="lpB-Xx-iR3"/>
+                            <constraint firstItem="QUM-Kr-AWU" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="vGh-tc-JXg"/>
+                            <constraint firstItem="Zeq-8j-PJX" firstAttribute="top" secondItem="QUM-Kr-AWU" secondAttribute="bottom" constant="170" id="z3O-Mo-m83"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="talentifyLogoXXXHDPI" width="120" height="120"/>
+    </resources>
 </document>
