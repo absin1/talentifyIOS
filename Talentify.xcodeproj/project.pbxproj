@@ -13,6 +13,7 @@
 		49B933E91FD6897E00773DB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49B933E81FD6897E00773DB5 /* Assets.xcassets */; };
 		49B933EC1FD6897E00773DB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49B933EA1FD6897E00773DB5 /* LaunchScreen.storyboard */; };
 		49B933F71FD6897F00773DB5 /* TalentifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B933F61FD6897F00773DB5 /* TalentifyTests.swift */; };
+		5734E40F1FE3D44800FEF106 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5734E40E1FE3D44800FEF106 /* LoginController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		49B933F21FD6897F00773DB5 /* TalentifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TalentifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49B933F61FD6897F00773DB5 /* TalentifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalentifyTests.swift; sourceTree = "<group>"; };
 		49B933F81FD6897F00773DB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5734E40E1FE3D44800FEF106 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				49B933E11FD6897E00773DB5 /* AppDelegate.swift */,
 				49B933E31FD6897E00773DB5 /* ViewController.swift */,
+				5734E40E1FE3D44800FEF106 /* LoginController.swift */,
 				49B933E51FD6897E00773DB5 /* Main.storyboard */,
 				49B933E81FD6897E00773DB5 /* Assets.xcassets */,
 				49B933EA1FD6897E00773DB5 /* LaunchScreen.storyboard */,
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49B933E41FD6897E00773DB5 /* ViewController.swift in Sources */,
+				5734E40F1FE3D44800FEF106 /* LoginController.swift in Sources */,
 				49B933E21FD6897E00773DB5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
