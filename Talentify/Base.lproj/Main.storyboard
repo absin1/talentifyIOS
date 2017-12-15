@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Heavy</string>
+            <string>Avenir-Roman</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -17,7 +23,85 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="350" translatesAutoresizingMaskIntoConstraints="NO" id="bYN-Tx-i8J">
+                                <rect key="frame" x="32" y="72.5" width="311" height="522"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lmr-1m-btA">
+                                        <rect key="frame" x="95.5" y="0.0" width="120" height="105"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="talentifyLogoRedXXXHDPI" translatesAutoresizingMaskIntoConstraints="NO" id="Q5T-w3-i7M">
+                                                <rect key="frame" x="30" y="0.0" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="bet-4b-Jqw"/>
+                                                    <constraint firstAttribute="height" constant="60" id="sFt-YS-P8L"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pg6-Up-Df9">
+                                                <rect key="frame" x="0.0" y="80" width="120" height="25"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="0JQ-HO-rZu">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="25"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TALENTIFY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GnK-M2-aZt">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="25"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="17f-wy-efE"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                                                <color key="textColor" red="0.57248467206954956" green="0.57258617877960205" blue="0.57247823476791382" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rXx-pg-sRj">
+                                        <rect key="frame" x="32" y="455" width="247" height="67"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="e1m-1s-SEO">
+                                                <rect key="frame" x="0.0" y="0.0" width="247" height="67"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKR-EF-eq3">
+                                                        <rect key="frame" x="0.0" y="0.0" width="247" height="34"/>
+                                                        <color key="backgroundColor" red="0.91969281435012817" green="0.22056463360786438" blue="0.31184977293014526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="16"/>
+                                                        <state key="normal" title="GET STARTED"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ulC-mU-Pyg">
+                                                        <rect key="frame" x="0.0" y="34" width="247" height="33"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="15"/>
+                                                        <state key="normal" title="Already a member?">
+                                                            <color key="titleColor" red="0.57248467206954956" green="0.57258617877960205" blue="0.57247823476791382" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="ulC-mU-Pyg" firstAttribute="leading" secondItem="e1m-1s-SEO" secondAttribute="leading" id="G9W-ej-nWM"/>
+                                                    <constraint firstAttribute="trailing" secondItem="GKR-EF-eq3" secondAttribute="trailing" id="GtF-27-1Zd"/>
+                                                    <constraint firstItem="GKR-EF-eq3" firstAttribute="leading" secondItem="e1m-1s-SEO" secondAttribute="leading" id="NHC-st-SBU"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ulC-mU-Pyg" secondAttribute="trailing" id="qPc-ka-9Df"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="rXx-pg-sRj" firstAttribute="leading" secondItem="bYN-Tx-i8J" secondAttribute="leading" constant="32" id="Q6h-25-MkT"/>
+                                    <constraint firstAttribute="trailing" secondItem="rXx-pg-sRj" secondAttribute="trailing" constant="32" id="sYo-RY-LA4"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bYN-Tx-i8J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0h4-OF-tWk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bYN-Tx-i8J" secondAttribute="trailing" constant="32" id="ciw-y0-9lO"/>
+                            <constraint firstItem="bYN-Tx-i8J" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dsq-Fn-Gk1"/>
+                            <constraint firstItem="bYN-Tx-i8J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pVc-p1-bdv"/>
+                            <constraint firstItem="bYN-Tx-i8J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="xZV-ke-mFh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -25,4 +109,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="talentifyLogoRedXXXHDPI" width="120" height="120"/>
+    </resources>
 </document>

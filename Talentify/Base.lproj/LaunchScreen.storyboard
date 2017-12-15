@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,38 +23,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="talentifyLogoXXXHDPI" translatesAutoresizingMaskIntoConstraints="NO" id="QUM-Kr-AWU">
-                                <rect key="frame" x="130" y="272" width="60" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="Yhe-3w-s27"/>
-                                    <constraint firstAttribute="width" constant="60" id="lf4-Nb-xgh"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TALENTIFY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zeq-8j-PJX">
-                                <rect key="frame" x="113.5" y="502" width="93.5" height="24"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="24" id="qkR-0c-nfa"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="9bF-rq-KUo">
+                                <rect key="frame" x="113.5" y="270" width="93.5" height="135"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="talentifyLogoXXXHDPI" translatesAutoresizingMaskIntoConstraints="NO" id="DuM-cJ-fmW">
+                                        <rect key="frame" x="17" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="BsG-SF-5AD"/>
+                                            <constraint firstAttribute="width" constant="60" id="C5R-E9-WdB"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TALENTIFY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szg-Qa-oCH">
+                                        <rect key="frame" x="0.0" y="110" width="93.5" height="25"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.91456800699234009" green="0.25395464897155762" blue="0.30776578187942505" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Zeq-8j-PJX" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="W0d-0u-CVJ"/>
-                            <constraint firstItem="Zeq-8j-PJX" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="cg6-Fv-uPJ"/>
-                            <constraint firstItem="QUM-Kr-AWU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="252" id="cnO-CN-Z6w"/>
-                            <constraint firstItem="Zeq-8j-PJX" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="lpB-Xx-iR3"/>
-                            <constraint firstItem="QUM-Kr-AWU" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="vGh-tc-JXg"/>
-                            <constraint firstItem="Zeq-8j-PJX" firstAttribute="top" secondItem="QUM-Kr-AWU" secondAttribute="bottom" constant="170" id="z3O-Mo-m83"/>
+                            <constraint firstItem="9bF-rq-KUo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="250" id="4fz-En-4cX"/>
+                            <constraint firstItem="9bF-rq-KUo" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="zet-PP-ODb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+            <point key="canvasLocation" x="50.625" y="373.94366197183098"/>
         </scene>
     </scenes>
     <resources>
