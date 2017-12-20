@@ -159,7 +159,7 @@
                                         </state>
                                         <connections>
                                             <action selector="loginButton:" destination="du5-VM-cJE" eventType="touchUpInside" id="nzk-PS-eM2"/>
-                                            <segue destination="Q5E-Lv-9Ip" kind="show" id="US7-m2-qMv"/>
+                                            <segue destination="h62-QG-mUw" kind="show" id="nOa-kl-80Q"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -185,7 +185,63 @@
             </objects>
             <point key="canvasLocation" x="-31.199999999999999" y="-358.4707646176912"/>
         </scene>
-        <!--Task Screen Controller-->
+        <!--Calendar-->
+        <scene sceneID="rgF-PH-cRF">
+            <objects>
+                <viewController id="TXI-Ph-57d" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6L6-Fo-sFz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="sMP-gQ-Bje"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Calendar" image="calendar_icon" id="jDH-Gm-JcJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p5G-Mv-YY4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1790" y="-32"/>
+        </scene>
+        <!--Roles-->
+        <scene sceneID="rcI-iR-Pjw">
+            <objects>
+                <viewController id="nzv-xy-xOm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XLC-in-tx2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="48j-WO-aPh"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Roles" image="roles_icon" id="sto-fE-X9i"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nat-fB-P3I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1790" y="-697"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ERG-uI-qKn">
+            <objects>
+                <tabBarController id="h62-QG-mUw" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5BP-Oe-whX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.91969603300094604" green="0.22067832946777344" blue="0.30754947662353516" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Q5E-Lv-9Ip" kind="relationship" relationship="viewControllers" id="ifa-xI-7BI"/>
+                        <segue destination="nzv-xy-xOm" kind="relationship" relationship="viewControllers" id="sZ1-ak-XR3"/>
+                        <segue destination="TXI-Ph-57d" kind="relationship" relationship="viewControllers" id="mDe-MY-OyS"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kPQ-cn-zCW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="834" y="-362"/>
+        </scene>
+        <!--Tasks-->
         <scene sceneID="zCC-RE-ZAu">
             <objects>
                 <viewController id="Q5E-Lv-9Ip" customClass="TaskScreenController" customModule="Talentify" customModuleProvider="target" sceneMemberID="viewController">
@@ -377,21 +433,25 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="E5p-ma-6Ci"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Tasks" image="tasks_icon" id="swb-ZI-0Ld"/>
                     <connections>
                         <outlet property="rootTopView" destination="AIx-CO-L7e" id="IVx-3y-MgA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K5X-fM-LAY" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="740" y="-358"/>
+            <point key="canvasLocation" x="833" y="742"/>
         </scene>
     </scenes>
     <resources>
         <image name="badge_and_background" width="444" height="240"/>
+        <image name="calendar_icon" width="36" height="36"/>
         <image name="coin_icon" width="36" height="36"/>
         <image name="notification_icon" width="36" height="36"/>
         <image name="profile_pic" width="69" height="73"/>
+        <image name="roles_icon" width="36" height="36"/>
         <image name="start_assessment_button" width="380" height="82"/>
         <image name="talentifyLogoRedXXXHDPI" width="120" height="120"/>
+        <image name="tasks_icon" width="36" height="36"/>
     </resources>
 </document>
