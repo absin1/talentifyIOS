@@ -351,6 +351,9 @@
                                             <constraint firstAttribute="width" secondItem="elq-dD-diC" secondAttribute="height" multiplier="190:41" id="SIH-qc-AeD"/>
                                         </constraints>
                                         <state key="normal" image="start_assessment_button"/>
+                                        <connections>
+                                            <segue destination="JXr-Jt-OIV" kind="show" id="drL-A9-9cb"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -441,6 +444,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K5X-fM-LAY" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="833" y="742"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rWO-e0-kpN">
+            <objects>
+                <viewController id="JXr-Jt-OIV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Uzw-4t-ZJ3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="UeL-UG-Jz5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JbS-Pd-YS0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1716" y="742"/>
         </scene>
     </scenes>
     <resources>
