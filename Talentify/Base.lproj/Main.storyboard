@@ -445,25 +445,119 @@
             </objects>
             <point key="canvasLocation" x="833" y="742"/>
         </scene>
-        <!--View Controller-->
+        <!--Task Play Controller-->
         <scene sceneID="rWO-e0-kpN">
             <objects>
-                <viewController id="JXr-Jt-OIV" sceneMemberID="viewController">
+                <viewController id="JXr-Jt-OIV" customClass="TaskPlayController" customModule="Talentify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uzw-4t-ZJ3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="DK3-D6-Hod" userLabel="AssessmentStatusStack">
+                                <rect key="frame" x="16" y="40" width="343" height="24"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="close_button" translatesAutoresizingMaskIntoConstraints="NO" id="qKP-fn-Fb8">
+                                        <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="IHa-ci-54I"/>
+                                            <constraint firstAttribute="width" constant="24" id="V0e-AW-SiA"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ywd-B7-XBH" userLabel="ProgressViewStack">
+                                        <rect key="frame" x="36" y="0.0" width="266" height="24"/>
+                                        <subviews>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5oy-EX-GJl">
+                                                <rect key="frame" x="0.0" y="0.0" width="266" height="24"/>
+                                            </progressView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="5oy-EX-GJl" firstAttribute="centerY" secondItem="Ywd-B7-XBH" secondAttribute="centerY" id="c8v-LG-QKl"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7/20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOw-8l-7Se">
+                                        <rect key="frame" x="314" y="0.0" width="29" height="24"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="750" constant="24" id="fZ1-aX-MK0"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tV6-QM-4f5" userLabel="QuestionView">
+                                <rect key="frame" x="16" y="100" width="343" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="755" text="Which of these risks is controllable and what will happen when this question gets too huge?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qoz-fT-jTm">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Qoz-fT-jTm" secondAttribute="bottom" id="azC-46-btm"/>
+                                    <constraint firstItem="Qoz-fT-jTm" firstAttribute="leading" secondItem="tV6-QM-4f5" secondAttribute="leading" id="pol-YX-pJt"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qoz-fT-jTm" secondAttribute="trailing" id="tFX-zI-fv7"/>
+                                    <constraint firstItem="Qoz-fT-jTm" firstAttribute="top" secondItem="tV6-QM-4f5" secondAttribute="top" id="wKV-Hk-fBE"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IuV-TX-xrR" userLabel="OptionView1">
+                                <rect key="frame" x="16" y="191" width="343" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="49R-ei-2EX" userLabel="Option1">
+                                        <rect key="frame" x="16" y="13.5" width="311" height="33"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="15"/>
+                                        <state key="normal" title="Taxation Rules but how owuld this look if the option text gets quite large much larger than even 2 lines">
+                                            <color key="titleColor" red="0.24705882352941178" green="0.24705882352941178" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                                <color key="value" red="0.30644103636917785" green="0.580078125" blue="0.15039072865073577" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="49R-ei-2EX" secondAttribute="bottom" constant="13.5" id="3ec-iZ-NhM"/>
+                                    <constraint firstItem="49R-ei-2EX" firstAttribute="leading" secondItem="IuV-TX-xrR" secondAttribute="leading" constant="16" id="F0M-UP-IgK"/>
+                                    <constraint firstItem="49R-ei-2EX" firstAttribute="top" secondItem="IuV-TX-xrR" secondAttribute="top" constant="13.5" id="Y8c-Jw-JEv"/>
+                                    <constraint firstAttribute="trailing" secondItem="49R-ei-2EX" secondAttribute="trailing" constant="16" id="fFe-wq-4tu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UeL-UG-Jz5" firstAttribute="trailing" secondItem="DK3-D6-Hod" secondAttribute="trailing" priority="750" constant="16" id="3a8-eZ-FwL"/>
+                            <constraint firstItem="IuV-TX-xrR" firstAttribute="top" secondItem="tV6-QM-4f5" secondAttribute="bottom" constant="47" id="89C-QA-kNS"/>
+                            <constraint firstItem="tV6-QM-4f5" firstAttribute="top" secondItem="DK3-D6-Hod" secondAttribute="bottom" constant="36" id="KQx-8k-bwe"/>
+                            <constraint firstItem="DK3-D6-Hod" firstAttribute="leading" secondItem="UeL-UG-Jz5" secondAttribute="leading" priority="750" constant="16" id="e6c-G6-las"/>
+                            <constraint firstItem="UeL-UG-Jz5" firstAttribute="trailing" secondItem="tV6-QM-4f5" secondAttribute="trailing" constant="16" id="hqA-fU-MMj"/>
+                            <constraint firstItem="DK3-D6-Hod" firstAttribute="top" secondItem="UeL-UG-Jz5" secondAttribute="top" priority="750" constant="20" id="u0n-m0-VLr"/>
+                            <constraint firstItem="UeL-UG-Jz5" firstAttribute="trailing" secondItem="IuV-TX-xrR" secondAttribute="trailing" constant="16" id="vJU-3b-NRX"/>
+                            <constraint firstItem="tV6-QM-4f5" firstAttribute="leading" secondItem="UeL-UG-Jz5" secondAttribute="leading" constant="16" id="yXv-rR-R09"/>
+                            <constraint firstItem="IuV-TX-xrR" firstAttribute="leading" secondItem="UeL-UG-Jz5" secondAttribute="leading" constant="16" id="ycp-vb-pxK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="UeL-UG-Jz5"/>
                     </view>
+                    <connections>
+                        <outlet property="optionView1" destination="IuV-TX-xrR" id="zLq-Ej-nAE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JbS-Pd-YS0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1716" y="742"/>
+            <point key="canvasLocation" x="1716" y="741.67916041979015"/>
         </scene>
     </scenes>
     <resources>
         <image name="badge_and_background" width="444" height="240"/>
         <image name="calendar_icon" width="36" height="36"/>
+        <image name="close_button" width="36" height="36"/>
         <image name="coin_icon" width="36" height="36"/>
         <image name="notification_icon" width="36" height="36"/>
         <image name="profile_pic" width="69" height="73"/>
